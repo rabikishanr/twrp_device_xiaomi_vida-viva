@@ -8,6 +8,16 @@
 LOCAL_PATH := device/xiaomi/vida
 
 # A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    system \
+    vendor \
+    product \
+    boot \
+    vbmeta_vendor \
+    vbmeta_system
+
+# A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
@@ -29,8 +39,8 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
 PRODUCT_PACKAGES += \
-    bootctrl.mt6781 \
-    bootctrl.mt6781.recovery
+    bootctrl.$(TARGET_BOARD_PLATFORM) \
+    bootctrl.$(TARGET_BOARD_PLATFORM).recovery
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
@@ -72,9 +82,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service \
-    libhealthd.$(PRODUCT_PLATFORM)
+    libhealthd.$(TARGET_BOARD_PLATFORM)
 
 # libion & libxml2
+# VNDK-SP libion from vendor - Memory Allocator functions for ion - Library for interfacing with the ION driver
+# The libxml2 package contains libraries and utilities used for parsing XML files.
+
 TARGET_RECOVERY_DEVICE_MODULES += \
     libion \
     libxml2
@@ -83,9 +96,3 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
 
-# Vibrator modules
-TARGET_RECOVERY_DEVICE_MODULES += \
-    android.hardware.vibrator-V1-ndk_platform.so
-
-RECOVERY_LIBRARY_SOURCE_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.vibrator-V1-ndk_platform.so
