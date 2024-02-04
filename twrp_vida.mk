@@ -25,8 +25,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=vida \
     PRODUCT_NAME=vida \
-    PRIVATE_BUILD_DESC="vida-user 12 SP1A.210812.016 V14.0.5.0.TGDMIXM release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="vida-user 12 SP1A.210812.016 V14.0.4.0.TGDINXM release-keys"
 
-BUILD_FINGERPRINT := Redmi/vida_global/vida:12/SP1A.210812.016/V14.0.5.0.TGDMIXM:user/release-keys
-
-# conditions for share or recreate: always mention credits for lopestom.
+BUILD_FINGERPRINT := Redmi/vida_in/vida:12/SP1A.210812.016/V14.0.4.0.TGDINXM:user/release-keys
