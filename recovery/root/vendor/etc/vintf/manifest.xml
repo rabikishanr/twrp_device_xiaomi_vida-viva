@@ -9,7 +9,6 @@
         manifest_em.xml
         manifest_bgservice.xml
         manifest_videotelephony.xml
-        manifest_secure_element_dsds.xml
         manifest_ir.xml
         manifest_km41.xml
         manifest_tee.xml
@@ -30,7 +29,6 @@
         manifest_composer.xml
         manifest.xml
         manifest_target_level_r.xml
-        manifest.xml
         manifest.xml
         manifest.xml
 -->
@@ -181,16 +179,6 @@
         <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>INfc</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::INfc/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
         <version>1.2</version>
@@ -248,18 +236,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IDevice/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.secure_element</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>ISecureElement</name>
-            <instance>SIM1</instance>
-            <instance>SIM2</instance>
-        </interface>
-        <fqname>@1.2::ISecureElement/SIM1</fqname>
-        <fqname>@1.2::ISecureElement/SIM2</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.sensors</name>
@@ -681,26 +657,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.0::IThhDevice/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.nxpnfc</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>INxpNfc</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::INxpNfc/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.nxpnfclegacy</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INxpNfcLegacy</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::INxpNfcLegacy/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.xiaomi.hardware.displayfeature</name>
