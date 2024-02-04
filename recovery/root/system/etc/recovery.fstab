@@ -5,15 +5,9 @@
 # device				mount point	fstype	flags
 
 # Dynamic Partitions
-system /system erofs ro wait,slotselect,logical,first_stage_mount
-system /system ext4 rw wait,slotselect,logical,first_stage_mount
-system /system f2fs rw wait,slotselect,logical,first_stage_mount
-vendor /vendor erofs ro wait,slotselect,logical,first_stage_mount
-vendor /vendor ext4 rw wait,slotselect,logical,first_stage_mount
-vendor /vendor f2fs rw wait,slotselect,logical,first_stage_mount
-product /product erofs ro wait,slotselect,logical,first_stage_mount
-product /product ext4 rw wait,slotselect,logical,first_stage_mount
-product /product f2fs rw wait,slotselect,logical,first_stage_mount
+system                                     /system          ext4                ro wait,slotselect,logical
+vendor                                     /vendor          ext4                ro wait,slotselect,logical
+product                                    /product         ext4                ro wait,slotselect,logical
 
 # Physical Partitions
 /dev/block/platform/bootdevice/by-name/metadata /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
