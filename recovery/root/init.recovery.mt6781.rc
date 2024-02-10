@@ -44,6 +44,21 @@ service mtk.plpath.utils.link /system/bin/mtk_plpath_utils
     oneshot
     seclabel u:r:recovery:s0
 
+service keystore_auth /system/bin/keystore_auth
+    oneshot
+    user system
+    group root
+    disabled
+    seclabel u:r:recovery:s0
+
+service keystore2 /system/bin/keystore2 /tmp/misc/keystore
+    class early_hal
+    user root
+    group keystore readproc log
+    disabled
+    writepid /dev/cpuset/foreground/tasks
+    seclabel u:r:recovery:s0
+
 service vibratorfeature-hal-service /system/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
     class hal
     user system
@@ -91,6 +106,5 @@ on property:twrp.modules.loaded=true
     start vibratorfeature-hal-service
 
 on boot
-    start health-hal-2-1
     start boot-hal-1-2
-
+    start health-hal-2-1
