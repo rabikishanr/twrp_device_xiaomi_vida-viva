@@ -7,8 +7,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit from viva device
-$(call inherit-product, device/xiaomi/viva/device.mk)
+# Inherit from vida device
+$(call inherit-product, device/xiaomi/vida/device.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
