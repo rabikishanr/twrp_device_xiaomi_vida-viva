@@ -91,5 +91,6 @@ on property:twrp.modules.loaded=true
     start vibratorfeature-hal-service
 
 on boot
-    start boot-hal-1-2
     start health-hal-2-1
+    start boot-hal-1-2
+
