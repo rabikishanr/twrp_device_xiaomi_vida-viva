@@ -2,7 +2,7 @@
 # Copyright (C) 2021 The TWRP Open Source Project
 #
 
-DEVICE_PATH := device/xiaomi/viva
+DEVICE_PATH := device/xiaomi/vida
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -43,7 +43,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := viva
+TARGET_BOOTLOADER_BOARD_NAME := vida
 TARGET_NO_BOOTLOADER := true
 
 # Platform
