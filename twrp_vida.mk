@@ -22,6 +22,6 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := vida
 PRODUCT_MANUFACTURER := xiaomi
 
-
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 
