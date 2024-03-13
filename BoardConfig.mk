@@ -3,7 +3,7 @@
 # Copyright (C) 2023 The TWRP Open Source Project
 #
 
-DEVICE_PATH := device/xiaomi/vida
+DEVICE_PATH := device/xiaomi/viva
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
