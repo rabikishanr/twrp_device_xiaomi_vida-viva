@@ -14,11 +14,11 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/SKOCHE/twrp_device_xiaomi_vida'
+        default: 'https://github.com/rabikishanr/twrp_device_xiaomi_vida-viva'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'test2'
+        default: 'vida_12.1'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
