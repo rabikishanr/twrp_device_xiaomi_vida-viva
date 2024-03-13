@@ -3,7 +3,7 @@
 # Copyright (C) 2023 The TWRP Open Source Project
 #
 
-LOCAL_PATH := device/xiaomi/vida
+LOCAL_PATH := device/xiaomi/viva
 
 # A/B
 AB_OTA_UPDATER := true
