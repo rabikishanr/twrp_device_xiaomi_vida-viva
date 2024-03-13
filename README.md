@@ -1,4 +1,4 @@
-TWRP device tree for Redmi Note 11 Pro 4G ( vida )
+TWRP device tree for Redmi Note 11 Pro 4G ( viva )
 ===============================================
 
 | Basic                   | Spec Sheet                                                                                                                     	|
