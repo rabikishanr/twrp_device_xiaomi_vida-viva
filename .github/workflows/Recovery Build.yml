@@ -14,15 +14,15 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/SKOCHE/twrp_device_xiaomi_vida'
+        default: 'https://github.com/rabikishanr/twrp_device_xiaomi_vida-viva'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'test2'
+        default: 'viva_12.1'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/xiaomi/vida'
+        default: 'device/xiaomi/viva'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
@@ -36,7 +36,7 @@ on:
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_vida'
+        default: 'twrp_viva'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
