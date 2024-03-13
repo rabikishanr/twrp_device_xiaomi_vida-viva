@@ -14,12 +14,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from vida device
-$(call inherit-product, device/xiaomi/vida/device.mk)
+$(call inherit-product, device/xiaomi/viva/device.mk)
 
-PRODUCT_DEVICE := vida
-PRODUCT_NAME := twrp_vida
+PRODUCT_DEVICE := viva
+PRODUCT_NAME := twrp_viva
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := vida
+PRODUCT_MODEL := viva
 PRODUCT_MANUFACTURER := xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
