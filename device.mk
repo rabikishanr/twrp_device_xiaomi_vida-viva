@@ -17,6 +17,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service \
+    android.hardware.boot@1.2-service \
     android.hardware.boot@1.2-mtkimpl \
     android.hardware.boot@1.2-mtkimpl.recovery
 	
@@ -29,13 +30,6 @@ PRODUCT_PACKAGES += \
     bootctrl.mt6781 \
     bootctrl.mt6781.recovery
 
-
-#if doesn't work remove this af
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.mt6781 \
-    libgptutils \
-    libz \
-    libcutils
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
